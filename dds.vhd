@@ -29,7 +29,7 @@ module dds(
 reg [15:0] sine_rom[255:0];
 reg [31:0] accumulator;
 
-initial begin
+initial begin // LUT mapping for sinus signal with 256 sample with 16 bits width
     sine_rom[0] = 16'h0000; // Dec: 0
     sine_rom[1] = 16'h0324; // Dec: 804
     sine_rom[2] = 16'h0648; // Dec: 1608
